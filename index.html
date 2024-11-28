@@ -3,35 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Form Thu Thập Dữ Liệu</title>
 </head>
 <body>
+    <h1>Nhập thông tin của bạn</h1>
+    <form method="POST">
+        <label for="ho_ten">Họ tên:</label><br>
+        <input type="text" id="ho_ten" name="ho_ten" required><br><br>
 
-    <h1>Phiếu Giám Sát Nhiễm Khuẩn Vết Mổ</h1>
-    <form action="https://formspree.io/f/xwpkrwnn" method="POST">
-        <label for="hsba">Mã số HSBA:</label>
-        <input type="text" id="hsba" name="hsba" required>
+        <label for="so_dien_thoai">Số điện thoại:</label><br>
+        <input type="text" id="so_dien_thoai" name="so_dien_thoai" required><br><br>
 
-        <label for="khoa">Khoa:</label>
-        <select id="khoa" name="khoa">
-            <option value="noi">Nội</option>
-            <option value="ngoai">Ngoại</option>
-            <option value="san">Sản</option>
-        </select>
-
-        <label for="gender">Giới tính:</label>
-        <input type="radio" id="nam" name="gender" value="Nam" checked> Nam
-        <input type="radio" id="nu" name="gender" value="Nữ"> Nữ
-
-        <label for="weight">Cân nặng (kg):</label>
-        <input type="number" id="weight" name="weight" min="0" max="200" step="0.1">
-
-        <label for="height">Chiều cao (cm):</label>
-        <input type="number" id="height" name="height" min="0" max="200" step="0.1">
-
-        <button type="submit">Lưu thông tin</button>
+        <input type="submit" value="Gửi">
     </form>
-
 </body>
 </html>
