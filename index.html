@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Phiếu Giám Sát Nhiễm Khuẩn Vết Mổ</h1>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="hsba">Mã số HSBA:</label>
+        <input type="text" id="hsba" name="hsba" required>
+
+        <label for="khoa">Khoa:</label>
+        <select id="khoa" name="khoa">
+            <option value="noi">Nội</option>
+            <option value="ngoai">Ngoại</option>
+            <option value="san">Sản</option>
+        </select>
+
+        <label for="gender">Giới tính:</label>
+        <input type="radio" id="nam" name="gender" value="Nam" checked> Nam
+        <input type="radio" id="nu" name="gender" value="Nữ"> Nữ
+
+        <label for="weight">Cân nặng (kg):</label>
+        <input type="number" id="weight" name="weight" min="0" max="200" step="0.1">
+
+        <label for="height">Chiều cao (cm):</label>
+        <input type="number" id="height" name="height" min="0" max="200" step="0.1">
+
+        <button type="submit">Lưu thông tin</button>
+    </form>
+
+</body>
+</html>
